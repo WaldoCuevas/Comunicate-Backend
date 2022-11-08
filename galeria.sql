@@ -32,6 +32,8 @@ SET time_zone = "+00:00";
 --
 
 INSERT INTO `imagen` (`id`, `image_id`, `image_url`, `nombre`) VALUES
+(1, 'wqluc6zoni37azewvuva', 'http://res.cloudinary.com/dpjai1g99/image/upload/v1667572144/wqluc6zoni37azewvuva.jpg', '312974380_2311764982326663_390875097266849885_n');
+(2, 'wqluc6zoni37azewvuva', 'http://res.cloudinary.com/dpjai1g99/image/upload/v1667572144/wqluc6zoni37azewvuva.jpg', '312974380_2311764982326663_390875097266849885_n');
 (3, 'wqluc6zoni37azewvuva', 'http://res.cloudinary.com/dpjai1g99/image/upload/v1667572144/wqluc6zoni37azewvuva.jpg', '312974380_2311764982326663_390875097266849885_n');
 
 --
