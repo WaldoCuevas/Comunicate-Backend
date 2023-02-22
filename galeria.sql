@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-11-2022 a las 17:44:43
+-- Tiempo de generación: 04-11-2022 a las 16:08:36
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -21,24 +21,23 @@ SET time_zone = "+00:00";
 -- Base de datos: `galeria`
 --
 
+CREATE DATABASE galeria CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+USE galeria;
+
 -- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `imagen`
 --
 
---
--- Volcado de datos para la tabla `imagen`
---
+CREATE TABLE `imagen` (
+  `id` int(11) NOT NULL,
+  `image_id` varchar(255) DEFAULT NULL,
+  `image_url` varchar(255) DEFAULT NULL,
+  `nombre` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `imagen` (`id`, `image_id`, `image_url`, `nombre`) VALUES
-(1, 'wqluc6zoni37azewvuva', 'http://res.cloudinary.com/dpjai1g99/image/upload/v1667572144/wqluc6zoni37azewvuva.jpg', '312974380_2311764982326663_390875097266849885_n');
-(2, 'wqluc6zoni37azewvuva', 'http://res.cloudinary.com/dpjai1g99/image/upload/v1667572144/wqluc6zoni37azewvuva.jpg', '312974380_2311764982326663_390875097266849885_n');
-(3, 'wqluc6zoni37azewvuva', 'http://res.cloudinary.com/dpjai1g99/image/upload/v1667572144/wqluc6zoni37azewvuva.jpg', '312974380_2311764982326663_390875097266849885_n');
-
---
--- Índices para tablas volcadas
---
 
 --
 -- Indices de la tabla `imagen`
@@ -53,9 +52,6 @@ ALTER TABLE `imagen`
 --
 -- AUTO_INCREMENT de la tabla `imagen`
 --
-ALTER TABLE `imagen`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
